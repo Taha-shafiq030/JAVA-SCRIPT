@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+
+<body>
+     
+<form action="">
+    <label for="">Name</label>
+    <input type="text" id="inp">
+    <br><br><label for="">Physics</label>
+    <input type="text" id="phy">
+    <br><br><label for="">Chemistry</label>
+    <input type="text" id="chem">
+    <br><br>
+    <label for="">maths</label>
+    <input type="text" id="maths">
+    <br><br>
+    <label for="">English</label>
+    <input type="text" id="eng">
+    <br><br>
+    <label for="">Urdu</label>
+    <input type="text" id="ur">
+    <br><br>
+    <button type="button" onclick="fun()" >Submit</button>
+</form>
+
+<p id="para"></p>
+
+<span id="p"></span>
+<br><br>
+<span id="c"></span>
+<br><br>
+<span id="m"></span>
+<br><br><span id="e"></span>
+<br><br><span id="u"></span>
+<br>
+<br><span id="t"></span>
+<br><br> <span id="per"></span>
+<script>
+    function fun(){
+
+
+    let user_name = document.getElementById("inp").value; 
+    let physics = parseInt( document.getElementById("phy").value); 
+    let chemistry =  parseInt(document.getElementById("chem").value); 
+    let maths =  parseInt(document.getElementById("maths").value); 
+    let english =  parseInt(document.getElementById("eng").value); 
+    let urdu =  parseInt(document.getElementById("ur").value); 
+    let total =(physics + chemistry + maths + english +urdu) ;
+    let percentage = total/500*100;
+    
+    
+    
+       document.getElementById("para").innerHTML = user_name ;
+       document.getElementById("p").innerHTML = "Physics : " + physics ;
+       document.getElementById("c").innerHTML = "Chemistry : " + chemistry;
+       document.getElementById("m").innerHTML = "Maths : " + maths;
+       document.getElementById("u").innerHTML = "Urdu : " + urdu;
+       document.getElementById("e").innerHTML = "English : " + english;
+       document.getElementById("t").innerHTML = "Total : " + total ;
+
+       document.getElementById("per").innerHTML = "percentage : " + percentage;
+        
+    }
+
+    </script>
+    
+</body>
+</html>

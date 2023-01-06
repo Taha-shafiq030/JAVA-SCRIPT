@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JStest2</title>
+</head>
+<body>
+<form action="">
+        <label for="">Number</label>
+        <input type="text" id="num">
+        <br><br>
+    <button type="button" onclick="fun()">Submit</button>
+</form>
+    <p id="main"></p>
+
+
+
+
+    <Script>
+        function fun(){
+            let number = document.getElementById("num").value;
+            if(number %3 == 0 && number %5 == 0){
+                document.getElementById("main").innerHTML = "Fizz Buzz";
+            }
+            else if( number %3 == 0){
+                document.getElementById("main").innerHTML = "Fizz";
+            }
+            else if( number %5 == 0){
+                document.getElementById("main").innerHTML = "Buzz";
+            }
+        }
+    </Script>
+</body>
+</html>

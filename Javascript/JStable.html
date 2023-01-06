@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+    <style>
+        tbody{
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="">
+        <label for="">number</label>
+        <input type="text" id="num">
+        <br>
+        <br>
+        <button type="button" onclick="fun()"> Submit </button>
+    </form>
+    
+    <table border="1px">
+        <tbody>
+
+        </tbody>
+    </table>
+    
+
+
+    <script>
+       
+        function fun(){
+            let number = document.getElementById("num").value;
+
+        for(let i=1; i<=num; i++){
+            document.write( "<tr>" + "<td>" + num + "</td>" + "<td>" + "X" + "</td>" +
+                "<td>" + i + "</td>" + "<td>" + "=" + "</td>" + "<td>" + num*i + "</td>" + "</tr>");
+                
+
+        }
+    }
+    </script>
+</body>
+</html>

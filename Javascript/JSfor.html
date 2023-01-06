@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter number</label>
+        <input type="text" id="number">
+        <br>
+        <button type="button" onclick="fun()">Submit</button>
+    </form>
+
+    <script>
+            function fun(){
+                let num = document.getElementById("number").value;
+                for(let i = 1; i <=num; i++){
+                    document.write(" hello world" + "<br>");
+                }
+            }
+
+    </script>
+    
+</body>
+</html>
